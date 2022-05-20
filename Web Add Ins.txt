@@ -1,3 +1,5 @@
+It is on the git now
+
 The only addin that is one-page by default is Standard Windows. All others must be added when starting up in UFT. • Web Addin is no exception.
 
 Check that Web Addin is added when starting UFT 
