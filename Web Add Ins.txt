@@ -1,0 +1,64 @@
+The only addin that is one-page by default is Standard Windows. All others must be added when starting up in UFT. • Web Addin is no exception.
+
+Check that Web Addin is added when starting UFT 
+• UFT must be started before the browser 
+• Record and Replay settings
+
+ZOOM In Browser
+If everything ends up wrong, highlight or SPY does not work
+
+
+
+Do not start the browser with UFT's built-in menu functions 
+• Code gives freedom of movement
+
+
+
+Normally in Web, all information is in "inner text" but there are exceptions: –WebCheckBox, checked: 0 or 1 – WebEdit, Value 
+• Tip: Enter a value, open OR manager, spy, add, click plus, look up what you entered
+
+
+
+There are all sorts of things to do with these. Set, Select, etc. 
+• It is almost impossible to keep track of what applies to what 
+• Tip: Drag-drop from OR, then UFT pastes what is Default operation, which is to Click for buttons, but to set the value for the other gadgets.
+
+
+
+Test-> Settings-> Run-> Object synchronization timeout: Default 20 seconds
+• Exists (<seconds>) will wait no more than the specified number of secondsBUT! It goes without saying that the parent chain exists! 
+• Tip: If the parents may not exist, wait for them first!
+
+VILKA object FUNC
+Browser and Page 
+• Do not confuse this with ClickSync etc which is available for Siebel objects 
+• There are also functions in LTE that you can use to check how "finished" a page is.
+
+
+JavaScript on the page? 
+• Java Object with connections on the server side? 
+• SiebelOpenUI (yes, it's web) with server support? 
+• Sometimes a Click in the object is enough 
+• Sometimes DeviceReplay is needed 
+• Sometimes you can navigate via the keyboard
+
+
+PC not the only platform, there is Tablet, PC with Touch, Mobile ... 
+• Built-in support in Web for "Pinch", "Swipe", "LongPress", "HoverTap", etc. 
+• Do not forget the Ctrl button at Object-Spy !
+
+
+Previous sections on Object Recognition: Native 
+• Advantages: Access to the browser's own implementation – Everything is possible – You get the same power as the developer 
+• Disadvantages: Access to the browser's own implementation – IE is different from Firefox which is different from Chrome – What works for one browser may have the opposite effect in another
+
+Last ace in the rock sleeve, send events 
+• Web objects have a function "FireEvent" 
+• Is in the help which events are for which objects 
+• In automation we have often used "onfocusout" which means ~ "I have finished entering"
+
+//*[@id="css"]
+
+undantag
+
+
